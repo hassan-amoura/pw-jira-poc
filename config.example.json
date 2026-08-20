@@ -1,0 +1,46 @@
+{
+  "jira": {
+    "base_url": "https://your-site.atlassian.net",
+    "email": "you@example.com",
+    "api_token": "REPLACE_ME_jira_api_token",
+    "jql": "project = SCRUM",
+    "story_points_field": "customfield_10016",
+    "timecode_source": "labels"
+  },
+  "projectworks": {
+    "base_url": "https://your-tenant.projectworksapp.com/",
+    "api_key": "REPLACE_ME_projectworks_api_key"
+  },
+  "conversion": {
+    "point_hours": {
+      "1": 2.67,
+      "2": 5.33,
+      "3": 8,
+      "5": 12,
+      "8": 19,
+      "13": 32
+    },
+    "fallback_rate": 2.67,
+    "date_strategy": "spread",
+    "max_hours_per_day": 8,
+    "workdays_only": true,
+    "standard_week_hours": 40,
+    "expected_points_per_week": 12
+  },
+  "mapping": {
+    "project_map": {
+      "SCRUM": 0
+    },
+    "timecode_map": {
+      "DESIGN": 0,
+      "PRODUCT": 0,
+      "ENGINEERING": 0,
+      "QUALITY": 0,
+      "_default": 0
+    },
+    "people_map": {
+      "you@example.com": 0
+    },
+    "people_by_account_id": {}
+  }
+}

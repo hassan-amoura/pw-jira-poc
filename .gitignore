@@ -1,0 +1,18 @@
+# Live credentials — never commit. Copy config.example.json instead.
+config.json
+
+# Run artefacts
+plan.json
+st.json
+*.state.json
+
+# Local Claude Code settings (contains machine-specific absolute paths)
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
